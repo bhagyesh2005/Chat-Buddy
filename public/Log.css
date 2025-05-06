@@ -1,0 +1,389 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
+    /* background-image: url('BackGround.jpg'); */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    align-items: center;
+    color: #162938;
+    background-color: #6674cc04;
+    justify-content: center;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #162938;
+}
+
+#type {
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#log1 {
+    background-color: #fff;
+    max-width: 1300px;
+    padding: 1rem 1.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    border: 0.3px solid #162938;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 9px #162938;
+    backdrop-filter: blur(16px);
+}
+
+#log1 h1 {
+    color: #162938;
+    text-align: center;
+    font-weight: 800;
+}
+
+#log1 .i1 {
+    width: 400px;
+    height: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin: 1.4rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    outline: none;
+    background: transparent;
+    border-color: #162938;
+    text-align: center;
+    color: #162938;
+}
+
+#log1 span svg {
+    color: #162938;
+}
+
+::placeholder {
+    color: #16293890;
+}
+
+#second svg {
+    margin-left: 3px;
+}
+
+#log1 span svg:hover {
+    cursor: pointer;
+}
+
+#remember-the-name {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.is-active {
+    display: none;
+}
+
+#remember-the-name span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#remember-the-name a {
+    text-decoration: none;
+    color: #0f1b24;
+}
+
+#remember-the-name a:hover {
+    text-decoration: underline;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end button {
+    margin-top: 12px;
+    padding: 0.8rem 11rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #6674cc;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.no-account {
+    margin-top: 18px;
+}
+
+.no-account {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+}
+
+.no-account a {
+    color: #0f1b24;
+    text-decoration: none;
+}
+
+.no-account a:hover {
+    text-decoration: underline;
+}
+
+.disno {
+    display: none;
+}
+
+#Res {
+    max-width: 1300px;
+    padding: 1rem 1.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    border: 0.3px solid #162938;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 9px #162938;
+    backdrop-filter: blur(100px);
+}
+
+#Res h1 {
+    color: #162938;
+    text-align: center;
+    font-weight: 800;
+}
+
+#Res .i1 {
+    width: 400px;
+    height: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin: 1.4rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    outline: none;
+    background: transparent;
+    border-color: #162938;
+    text-align: center;
+    color: #162938;
+}
+
+.flex {
+    display: flex;
+}
+
+.isactive {
+    display: none;
+}
+
+.pop-up {
+    position: fixed;
+    background-color: #fff;
+    top: 10px;
+    right: 15%;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 0.7rem;
+    padding: 0 2rem;
+    transition: top 0.5s ease-in-out;
+}
+
+.ispop {
+    top: -100px;
+}
+
+#side-image1,
+#side-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+#side-image1 img,
+#side-image2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+
+#type {
+    margin-bottom: 50 px;
+}
+
+#element {
+    color: #6674cc;
+}
+
+.DoWhite {
+    background-color: #fff;
+}
+
+/* OTP section */
+.otpVerification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otpVerification button {
+    margin-top: 10px;
+    width: 400px;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    background-color: black;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+}
+
+.GetVerified:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.895);
+}
+
+@media only screen and (max-width: 560px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #log1 .i1 {
+        width: 290px;
+        height: 20px;
+    }
+
+    .end button {
+        margin-top: 12px;
+        padding: 0.8rem 9rem;
+    }
+
+    #log1 {
+        padding: 1rem 1rem;
+    }
+
+    #log1 h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .i1 {
+        font-size: 24px;
+    }
+
+    #Res {
+        padding: 1rem 1rem;
+    }
+
+    #Res h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    #Res .i1 {
+        width: 290px;
+        height: 20px;
+    }
+
+    #type {
+        font-size: 16px;
+    }
+
+    .otpVerification button {
+        width: 334px;
+    }
+
+}
+
+
+@media only screen and (max-width: 398px) {
+
+    #log1 {
+        padding: 0.2rem 0.7rem;
+    }
+
+    #log1 .i1 {
+        width: 260px;
+        height: 20px;
+    }
+
+    .end button {
+        margin-top: 12px;
+        padding: 0.6rem 8rem;
+    }
+
+    #log1 span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Res {
+        padding: 0.2rem 0.7rem;
+    }
+
+    #Res .i1 {
+        width: 260px;
+    }
+
+    #Res span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .otpVerification button {
+        width: 304px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+    #side-image1,
+    #side-image2 {
+        display: none;
+    }
+}

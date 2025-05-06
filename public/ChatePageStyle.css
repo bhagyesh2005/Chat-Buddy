@@ -1,0 +1,1298 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Gilroy';
+}
+
+*::selection {
+    color: #fff;
+    background-color: #6674cc;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.margin-auto {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.search-container {
+    position: relative;
+}
+
+.is-active {
+    display: none;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+}
+
+#searchInput:focus {
+    width: 300px;
+}
+
+#searchButton {
+    position: absolute;
+    margin-left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 14px;
+    background-color: #6674cc;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+#searchButton:hover {
+    background-color: #6674ccec;
+}
+
+.menu {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+}
+
+.nav-bar {
+    width: 99.3%;
+    height: 89px;
+    border: 2px solid rgba(128, 128, 128, 0.317);
+    box-shadow: 1px 1px 10px black;
+}
+
+.search-container {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-right {
+    column-gap: 17px;
+}
+
+.box-color {
+    background-color: #242428;
+}
+
+.img-login {
+    border-top-left-radius: 43px;
+    border-bottom-left-radius: 43px;
+    box-shadow: 0px 0px 2px black;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    background-color: #8080803a;
+}
+
+.img-login img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #6674cc;
+}
+
+#hov:hover {
+    cursor: pointer;
+}
+
+.hover-effect {
+    border: none;
+    border-radius: 1rem;
+    width: 90px;
+    background-color: rgba(128, 128, 128, 0.283);
+    padding: 1px 1px;
+    outline: none;
+    overflow: auto;
+}
+
+.pop-up-right {
+    top: -200px;
+    width: 240px;
+    height: 154px;
+    box-shadow: 1px 1px 6px black;
+    z-index: 1;
+    border-radius: 0.2rem;
+    position: fixed;
+    flex-direction: column;
+    transition: top 0.5s ease-in-out;
+}
+
+.UpToDown {
+    top: 110px;
+}
+
+/* pop-up-right */
+.pop-up-right a {
+    text-decoration: none;
+    color: grey;
+    /* background-color: #fff; */
+    padding: 1rem 4rem;
+}
+
+.pop-up-right a:nth-child(2) {
+    padding: 1rem 4.56rem;
+    border-top: 2px solid rgba(128, 128, 128, 0.231);
+}
+
+.pop-up-right a:hover {
+    background-color: rgba(128, 128, 128, 0.116);
+}
+
+/* Pop-Up Section */
+
+.popup-class1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+#pop-up1 {
+    height: 380px;
+    width: 520px;
+    box-shadow: 1px 1px 8px black;
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 0.33rem;
+    row-gap: 15px;
+}
+
+#pop-up1 img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+#pop-up1 p {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+#pop-up1 p span:nth-child(1) {
+    color: grey;
+}
+
+#pop-up1 p span:nth-child(2) {
+    color: grey;
+}
+
+#close {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+#close button {
+    background-color: rgba(128, 128, 128, 0.329);
+    border: none;
+    color: black;
+    font-weight: 300;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.2rem;
+    transform: translateY(-50%);
+}
+
+#close button:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.477);
+}
+
+.CisActive {
+    color: #fff;
+}
+
+.BackGround {
+    background-color: #1c1c1f;
+}
+
+.UserPart {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.UnderInfluence {
+    width: 99.4%;
+    height: 98.4%;
+    max-width: 1600px;
+}
+
+.sideDrawer {
+    height: 100%;
+    width: 370px;
+    position: fixed;
+    box-shadow: 1px 1px 8px black;
+    transition: top 0.5s ease-in-out;
+}
+
+#SubDiv {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    row-gap: 11px;
+}
+
+#Chunks {
+    width: 320px;
+    height: 70px;
+    border-radius: 0.3rem;
+    background-color: rgba(128, 128, 128, 0.347);
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding-left: 10px;
+}
+
+#Chunks img {
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+}
+
+#Chunks:hover {
+    background-color: #6674cc9b;
+    cursor: pointer;
+}
+
+#chat:hover {
+    background-color: #6674cc9b;
+}
+
+.black {
+    background-color: #242428;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.ChatSelector {
+    height: 81%;
+    background-color: rgba(128, 128, 128, 0.269);
+    border-radius: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+#chat {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 372px;
+    border-radius: 0.5rem;
+    background-color: #80808046;
+    margin-top: 15px;
+}
+
+#chat {
+    display: flex;
+    cursor: pointer;
+}
+
+#chat span {
+    margin-left: 14px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.Sub-Chunks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 10px;
+}
+
+.color {
+    color: rgba(0, 0, 0, 0.845);
+}
+
+#CreateGroup {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.ChatContainer {
+    margin-top: 10px;
+}
+
+.ChatSelector {
+    overflow-y: scroll;
+}
+
+#CreateGroup {
+    column-gap: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(128, 128, 128, 0.39);
+}
+
+#CreateGroup:hover {
+    background-color: rgba(128, 128, 128, 0.253);
+}
+
+#SubDiv {
+    height: 530px;
+    overflow-y: scroll;
+}
+
+.Sub-Chunks span {
+    display: flex;
+    column-gap: 5px;
+}
+
+.sideDrawer h3 {
+    text-align: center;
+    color: rgb(107, 104, 104);
+}
+
+.RIGHT_PART {
+    right: 100%;
+}
+
+.sub-Under {
+    height: 100%;
+    width: 100%;
+}
+
+.ChatPerson {
+    height: 100%;
+    width: 30%;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 8px black;
+}
+
+.ChatRoom {
+    height: 100%;
+    width: 69.6%;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 8px black;
+}
+
+.IntoChat {
+    height: 86%;
+    background-color: rgba(128, 128, 128, 0.269);
+    width: 95.6%;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#back {
+    box-shadow: 1px 1px 10px black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 95%;
+    margin-top: 60%;
+    background-color: #fff;
+    position: absolute;
+}
+
+#ResGoBack {
+    height: 40px;
+    padding-top: 5px;
+    width: 40px;
+    padding-left: 6px;
+    border-radius: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.477);
+}
+
+#ResGoBack:hover {
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+#back:hover {
+    cursor: pointer;
+    color: green;
+    background-color: #ccc;
+}
+
+.no-display {
+    display: none;
+}
+
+/* Group Chat section */
+.GroupChatPopUp {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SmallPopChunks {
+    height: 292px;
+    width: 410px;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+.SmallPopChunks h1 {
+    text-align: center;
+
+}
+
+.colorh1 {
+    color: #555;
+}
+
+.AddToGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#PeopleToAdd,
+#ChatName {
+    padding: 0.6rem 5.4rem;
+    border-radius: 0.4rem;
+    border: 2px solid rgb(100, 99, 99);
+    font-size: 16px;
+    outline: 2px solid transparent;
+    transition: outline 0.5s ease;
+    background: transparent;
+    text-align: center;
+}
+
+#ChatName:focus {
+    outline: 2px solid #6d7bdb;
+    border: none;
+    text-align: center;
+}
+
+#PeopleToAdd:focus {
+    outline: 2px solid #6d7bdb;
+    border: none;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 15.4px;
+}
+
+.PopUpBtn button {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-weight: 700;
+    background-color: #6674cc;
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #6674cc, #6674ccb6);
+    background-size: 200% 100%;
+    transition: background-position 0.3s, color 0.3s;
+}
+
+.PopUpBtn button:focus {
+    outline: none;
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.AddColor {
+    background-color: #fff;
+}
+
+.BackToChat {
+    position: fixed;
+    float: right;
+    margin-left: 367px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #414040;
+}
+
+/* Loading Section */
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 24%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.393);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.search-in-chunks {
+    height: 220px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.354);
+    border-radius: 0.7rem;
+    margin-top: 20px;
+    padding-top: 4px;
+    overflow-y: scroll;
+    padding-left: 6px;
+}
+
+/*  About Populated Chat */
+.PopulatedChat {
+    height: 250px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.354);
+    border-radius: 0.7rem;
+    margin-top: 6px;
+    padding-top: 4px;
+    overflow-y: scroll;
+    padding-left: 6px;
+}
+
+.ShowHeight {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    height: 590px;
+    margin-top: 43px;
+    max-height: 81%;
+}
+
+.PopulatedSmallChunks {
+    height: 70px;
+    border-radius: 0.5rem;
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.441);
+    display: flex;
+    padding-left: 13px;
+    column-gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.PopulatedSmallChunks img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.ChunksArray {
+    height: 30px;
+    width: 365px;
+    border-radius: 0.5rem;
+    display: flex;
+    column-gap: 10px;
+    overflow-y: scroll;
+    padding: 0.2rem 0;
+}
+
+.ChunksArrayElement {
+    width: 90px;
+    height: 30px;
+    background-color: rgba(128, 0, 128, 0.676);
+    border-radius: 0.6rem;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px black;
+}
+
+.ChunksArray::-webkit-scrollbar {
+    display: none;
+}
+
+
+#Delete {
+    margin-left: 5px;
+}
+
+
+/* For Chatting section */
+
+.Nothing {
+    height: 100%;
+    width: 100%;
+}
+
+.Wrap {
+    height: 100%;
+    width: 100%;
+}
+
+#pop-up1 h1 p {
+    margin-bottom: -14px;
+}
+
+#close {
+    margin-bottom: 60px;
+}
+
+.MainContainerStuff {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.MainContainerStuff h1 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 12px;
+    color: rgb(91, 91, 91);
+}
+
+.MainContainerStuff svg {
+    margin-right: 12px;
+    cursor: pointer;
+    color: rgb(91, 91, 91);
+}
+
+.GetCss {
+    height: 50px;
+    width: 400px;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.226);
+    padding-left: 5px;
+    border-radius: 0.3rem;
+    color: #242428;
+}
+
+.GetCss::-webkit-scrollbar {
+    display: none;
+}
+
+/* For upadating the group */
+.CRUD {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+.white1 {
+    background-color: #fff;
+}
+
+.UnderCrud {
+    margin-top: 100px;
+    height: 50%;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px black;
+    padding-top: 0.5px;
+    /* display: none; */
+}
+
+.Updated {
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.UpdatedBtn {
+    background-color: #6674cc;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #6674cc, #6674ccb6);
+    background-size: 200% 100%;
+    transition: background-position 0.3s, color 0.3s;
+}
+
+.UpdatedBtn:focus {
+    outline: none;
+    background-position: -100% 0;
+    color: #fff;
+}
+
+#UpdatedChatName,
+#UpdatedUserName {
+    padding: 0.6rem 5.1rem;
+    border-radius: 0.4rem;
+    border: 2px solid rgb(100, 99, 99);
+    font-size: 16px;
+    outline: 2px solid transparent;
+    transition: outline 0.5s ease;
+    background: transparent;
+    text-align: center;
+}
+
+#UpdatedChatName {
+    padding: 0.6rem 2.5rem;
+    margin-bottom: 10px;
+}
+
+#UpdatedChatName:focus {
+    outline: 2px solid #6d7bdb;
+    border: none;
+    text-align: center;
+}
+
+#UpdatedUserName:focus {
+    outline: 2px solid #6d7bdb;
+    border: none;
+    text-align: center;
+}
+
+.LeaveBtn {
+    background-color: rgba(255, 0, 0, 0.743);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.807), rgba(255, 0, 0, 0.628));
+    background-size: 200% 100%;
+    transition: background-position 0.3s, color 0.3s;
+    margin-top: 25px;
+}
+
+.LeaveBtn:focus {
+    outline: none;
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.CloseDiv {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.UpdatedArray {
+    height: 30px;
+    width: 360px;
+    border-radius: 0.5rem;
+    display: flex;
+    column-gap: 10px;
+    overflow-y: scroll;
+    padding: 0.2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.UpadatedChunk {
+    width: 90px;
+    height: 30px;
+    background-color: rgba(128, 0, 128, 0.676);
+    border-radius: 0.6rem;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px black;
+}
+
+.GroupChatPopUp {
+    z-index: 100;
+}
+
+/* for chat input */
+
+.IntoChat {
+    position: relative;
+}
+
+.ChatMsg {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 97%;
+    padding: 0.2rem 0.2rem;
+    gap: 5px;
+}
+
+.ChatMsg input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(168, 163, 163, 0.094);
+    padding: 0.5rem 1rem;
+    font-size: 19px;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(168, 163, 163);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.ChatMsg input::placeholder {
+    text-align: left;
+    font-size: 17px;
+}
+
+.ChatMsg svg {
+    cursor: pointer;
+}
+
+.ChatMsg button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #606ecddb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ChatMsg button:hover {
+    background-color: darkgreen;
+}
+
+.ChatMsg button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.3);
+}
+
+/* for chat section */
+
+.message-section {
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    overflow-y: scroll;
+}
+
+.message {
+    padding: 0.4rem 0.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+.message-section::-webkit-scrollbar {
+    display: none;
+}
+
+.message-section {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.message-sender {
+    background-color: rgba(128, 0, 128, 0.574);
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.message-sender::-webkit-scrollbar {
+    display: none;
+}
+
+.message-receiver {
+    background-color: #6674ccb9;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+/* Loading animation */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6674cc;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(19px, 0);
+    }
+}
+
+/* Spinner Section */
+
+.spinner-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #606ecd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1427px) {
+    .search-container {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .pop-up-right {
+        right: 1%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .pop-up-right {
+        width: 200px;
+        height: 124px;
+    }
+}
+
+@media only screen and (max-width: 513px) {
+    #hov {
+        display: none;
+    }
+
+    #image-login-id img {
+        display: none;
+    }
+
+    .nav-right {
+        column-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 848px) {
+    .menu {
+        display: block;
+    }
+
+    .sub-search-container {
+        display: none;
+    }
+
+    .nav-image h1 {
+        font-size: 24px;
+    }
+
+    .img-login img {
+        height: 39px;
+        width: 39px;
+    }
+
+    .ChatPerson {
+        width: 100%;
+    }
+
+    .ChatRoom {
+        width: 100%;
+        display: none;
+    }
+
+    .MobileSearch {
+        border-radius: 0.3rem;
+        height: 95px;
+        position: fixed;
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    #BOX {
+        width: 150px;
+        height: 97px;
+        position: fixed;
+        top: -100px;
+        transition: top 0.5s ease-in-out;
+        right: 10px;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 0.2rem;
+        flex-direction: column;
+    }
+
+    #BOX a {
+        text-decoration: none;
+        color: grey;
+        padding: 0.9rem 2rem;
+    }
+
+    #BOX a:hover {
+        background-color: rgba(128, 128, 128, 0.425);
+    }
+
+    #BOX a:nth-child(2) {
+        border-top: 2px solid rgba(128, 128, 128, 0.454);
+    }
+
+    #inSearch {
+        padding: 8px;
+        width: 160px;
+        margin-left: 9px;
+        outline: none;
+        border-radius: 0.5rem;
+        border: 2px solid rgba(128, 128, 128, 0.395);
+    }
+
+    .inBtn {
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.3rem;
+        border: none;
+        background-color: #6674cc;
+        color: #fff;
+    }
+
+    #mob {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2px;
+    }
+
+    .CROSS {
+        border-radius: 50%;
+        position: fixed;
+        text-align: center;
+        top: 4px;
+        right: 8px;
+        width: 20px;
+        box-shadow: 1px 1px 4px black;
+    }
+
+    input {
+        background: transparent;
+    }
+
+    .Effect {
+        top: 100px;
+    }
+
+    #pop-up1 {
+        height: 355px;
+        width: 300px;
+    }
+
+    #pop-up1 h1 {
+        font-size: 18px;
+    }
+
+    #pop-up1 p span:nth-child(1) {
+        font-size: 11px;
+    }
+
+    #back {
+        margin-left: 90%;
+    }
+
+    #loadingOverlay {
+        width: 100%;
+    }
+
+    #chat {
+        width: 91%;
+    }
+
+    .ChatContainer h2 {
+        font-size: 21px;
+    }
+
+    #CreateGroup {
+        padding: 0.4rem 0.3rem;
+        padding-left: 10px;
+    }
+}
+
+input {
+    color: grey;
+}
+
+@media only screen and (max-width: 433PX) {
+    .SmallPopChunks {
+        width: 330px;
+    }
+
+    .PopulatedChat {
+        height: 300px;
+    }
+
+    #PeopleToAdd,
+    #ChatName {
+        padding: 0.56rem 4rem;
+        font-size: 14px;
+    }
+
+    .SmallPopChunks h1 {
+        font-size: 24px;
+    }
+
+    .PopUpBtn button {
+        padding: 0.52rem 0.6rem;
+    }
+
+    .BackToChat {
+        margin-left: 288px;
+        margin-bottom: 181px;
+    }
+}
